@@ -20,7 +20,7 @@ def validate_user(username, minlen):
     if username[0].isnumeric():
         return False
 
-    # Usernames can't start with something other than a letter
+    # Usernames can't start with something other than a letter using regular expression
     if not re.match('[a-z]',username[0]):
        return False
     return True
